@@ -1,0 +1,124 @@
+.history {
+  &__top {
+    background: url("../img/best.jpg") no-repeat top center;
+    min-height: 500px;
+    background-size:cover;
+  }
+  &__wrapper {
+    background: linear-gradient(97.28deg, rgba(25, 22, 27, 0.92) 34.6%, rgba(25, 22, 27, 0.3) 83.17%);
+    padding: 124px 0 96px 80px;
+  }
+  &__title {
+    max-width: 721px;
+    width: 100%;
+    margin-bottom: 24px;
+    span {color: @orange;}
+  }
+  &__text {
+    max-width: 431px;
+  }
+  &__bottom {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 80px;
+  }
+  &__bottom-title {
+    .pfd700();
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 70px;
+    color:#fff;
+  }
+  &__items {
+    .cols();
+    border-top:2px dashed rgba(255, 255, 255, 0.15);
+    padding-top: 34px;
+  }
+  &__item {
+    position: relative;
+    max-width: 261px;
+    width: 100%;
+    padding-right: 40px;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 46px;
+      height: 6px;
+      background: @orange;
+      left: 0;
+      top: -39px;
+    }
+  }
+  &__item-title {
+    font-size: 32px;
+    line-height: 44px;
+    color:#fff;
+    margin-bottom: 16px;
+  }
+  &__item-subtitle {
+    .pfd700();
+    font-size: 20px;
+    line-height: 30px;
+    color:#fff;
+    margin-bottom: 16px;
+  }
+  &__item-text {}
+}
+.philosophy {
+  &-title {
+    margin-bottom: 16px;
+    padding-right: 20px;
+  }
+  &__items {
+    .cols();
+    padding: 160px 10px;
+  }
+  &__subtitle {
+    .pfd700();
+    font-size: 32px;
+    line-height: 48px;
+    color:#fff;
+    max-width: 550px;
+    
+  }
+  &__text {
+    max-width: 540px;
+    p {margin-bottom: 40px;}
+  }
+}
+@media  screen and (max-width:1280px){
+.philosophy {
+  &__items {
+    .cols();
+    padding: 160px 20px;
+  }
+  &__text {
+    max-width: 540px;
+    p {margin-bottom: 40px;}
+    }
+  }
+}
+@media  screen and (max-width:992px){
+  .history {
+    &__bottom {
+      padding: 80px 20px;
+    }
+  }
+}  
+@media  screen and (max-width:767px){
+  .history {
+    &__wrapper {
+      padding: 124px 20px 168px 20px;
+    }
+    &__items {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    &__item {margin-bottom: 80px;}
+  }
+  .philosophy {
+    &__items {
+      display: block;
+      padding: 60px 20px;
+    }
+  }  
+}

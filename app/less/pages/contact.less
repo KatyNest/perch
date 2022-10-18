@@ -1,0 +1,113 @@
+.contact {
+  &__inner {
+    padding: 88px 10px 140px;
+    .cols();
+  }
+  &__item {}
+  &__text {margin-bottom: 40px;}
+  &__images {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;  
+  }
+  &__img {
+    width: 100%;
+    display: block;
+    margin: 0 33px;
+    &:first-child {
+      margin-top: 97px;
+    }
+    &:last-child {
+      margin-top: 12px;
+    }    
+  }
+}
+.contact-title {
+  max-width: 718px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.contact-form {
+  max-width: 623px;
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item {
+    margin-bottom: 24px;
+  }
+  input {
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    outline: none;
+    color:#fff;
+    padding: 20px 31px;
+   width: 300px;
+  }
+  textarea {
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    outline: none;
+    color:#fff;
+    padding: 17px 32px 7px;
+    width: 100%;
+  }
+  ::placeholder {
+    color: #fff;
+    font-family: Montserrat,sans-serif;
+    font-size: 16px;
+  }
+  &__btn {
+    background: @lblack url("../img/arrow-orange.svg") no-repeat right 24px center;
+    color:#fff;
+    border: none;
+    outline: none;
+    padding-right:50px;
+    width: 182px;
+    height: 64px;
+    cursor: pointer;
+    .montestrat500 ();
+    display: inline-block;
+    transition: all ease-in .3s;
+    &:hover {    
+      background: @lblack url("../img/arrow-orange.svg") no-repeat right 20px center;
+    }    
+  }
+}
+@media  screen and (max-width:1280px){
+.contact {
+  &__inner {
+     padding:88px 20px 140px;
+    }
+  }
+  .contact__item {
+    &:first-child {
+      padding-right: 15px;
+    }
+  .contact__img {
+    margin: 0 10px;
+    &:first-child {margin-top: 50px;}
+    &:last-child {display: none;}
+    }
+  } 
+}
+@media  screen and (max-width:991px){
+  .contact__img {
+    margin: 0 10px;
+    &:first-child {display: none;}
+  }
+  .contact {
+    &__inner {
+      padding:60px 20px 60px;
+      }
+    }
+  }
+@media  screen and (max-width:767px){
+  .contact-form__items {
+    display: block;
+  }  
+  .contact-form__item {
+    input {width: 100%;}
+  }
+}

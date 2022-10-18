@@ -1,0 +1,135 @@
+.our-menu {
+   &__inner {
+    padding: 34px 10px 165px;
+  }
+  &__top {
+   .cols();
+   margin-bottom:15px; 
+  }
+  &-subtitle {
+    margin-bottom: 23px;
+  }
+  &__text {
+    max-width: 564px;
+    width: 100%;
+    padding-top: 65px;
+  }
+  &-title {
+    margin-bottom: 30px;
+    max-width: 575px;
+  }
+  &__popular {
+    color:@blue;
+    .pfd700();
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 85px;
+  }
+}
+.menu {
+  .cols();
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  &__item {
+    background: @lblack;
+    margin-bottom: 33px;
+  }
+  &__bottom{
+    padding: 14px 32px 24px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    font-size: 20px;
+    line-height: 30px;
+    color:#fff;
+    .pfd700();
+  }
+  &__price {
+    font-size: 20px;
+    line-height: 32px;
+    color:#fff;
+    .montestrat500();
+  }
+  &__img {
+    width: 100%;
+  }
+}
+.tabs {
+  &__items {
+    max-width: 580px;
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    } 
+  &__item.active {
+   span {
+     color:@orange;
+    }
+  }  
+  &__link {
+    cursor: pointer;
+    &.active, 
+    &:hover {color:@orange;}
+  }
+  &__block {
+    visibility: hidden;
+    height: 0px;
+    &.active {
+      visibility: visible;
+    height: auto;
+    }
+  }
+}
+
+
+@media  screen and (max-width:1279px){
+  .our-menu__inner {
+    padding: 34px 20px 165px;
+  }
+  .menu {justify-content: space-around;}
+}
+@media  screen and (max-width:992px){
+ .our-menu__top {display: block;}
+ .our-menu__text {
+   max-width: 100%;
+   padding-top: 25px;
+ }
+}
+
+@media  screen and (max-width:852px){
+  .menu {
+    display: block;
+    max-width: 405px;
+    margin: 0 auto 40px;
+    position: relative;
+    .slick-dots {bottom: 0;}
+  }
+  .our-menu__inner {padding-bottom: 60px;}
+}
+@media  screen and (max-width:500px){
+  .tabs{
+    &__items {
+    flex-wrap: wrap;
+    }
+  &__item {
+    width: 33.3%;
+    margin-bottom: 10px;
+    }
+  }
+}
+@media  screen and (max-width:375px){
+  .menu__bottom {
+    padding: 14px 25px 24px;
+  }
+  .menu__price, .menu__title {
+    font-size: 18px;
+  }
+  .tabs{
+     &__item {
+      width:50%;
+    }
+  }
+}

@@ -1,0 +1,156 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    scroll-behavior: smooth;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+body {   
+  .montestrat400 ();
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
+  color: @grey;
+  background: @black;
+  min-width: 320px;
+  overflow-x: hidden;
+
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+}
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-title {
+  font-size: 56px;
+  line-height: 68px;
+  .pfd700();
+  color:#fff;
+
+}
+.title {
+  font-size: 48px;
+  line-height: 58px;
+  .pfd700();
+  color:#fff;
+
+}
+.subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  .pfd400();
+  color:@orange;
+  position: relative;
+  display: inline-block;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 1px;
+    background-color: #fff;
+    right: -133px;
+    top:50%;
+    transform: translateY(-50%);
+  }
+}  
+a {
+  color:#fff;
+  text-decoration: none;
+  &:hover {color:@orange}
+}
+.hours {
+  margin-bottom: 16px;
+  &__title {
+    color:#fff;
+    font-size: 20px;
+    line-height: 30px;
+    .pfd700();
+    
+  }
+  &__text {
+    max-width: 119px;
+  }
+}
+.address {
+  margin-bottom: 16px;
+  &__title {
+    color:#fff;
+    font-size: 20px;
+    line-height: 30px;
+    .pfd700();
+    
+  }
+  &__text {
+    max-width: 310px;
+  }
+}
+.contacts {
+  margin-bottom: 16px;
+  &__title {
+    color:#fff;
+    font-size: 20px;
+    line-height: 30px;
+    .pfd700();
+    
+  }
+  &__text {
+    max-width: 310px;
+  }
+}
+.btn-orange {
+  background: @orange url("../img/btn-arrow.svg") no-repeat right 24px center;
+  color:#2E2D33;
+  padding: 11px 50px 9px 24px;
+  .montestrat500 ();
+  display: inline-block;
+  transition: all ease-in .3s;
+  &:hover {    
+    background: @orange url("../img/btn-arrow.svg") no-repeat right 20px center;
+    color:@black
+  }
+}
+.cols{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+  }
+  .slick-dots li button {
+  width: 10px;
+  height: 10px; 
+  background: @orange;
+  border-radius: 100%;
+  &::before {
+    display: none;
+  }     
+  }
+.slick-dots li.slick-active button {
+  background: #fff;
+}
+
+@media  screen and (max-width:767px){
+  .title {
+    font-size: 34px;
+    line-height: 44px;
+  }
+}
+@media  screen and (max-width:413px){
+  .main-title {
+    font-size: 40px;
+    line-height: 56px;
+  }
+}

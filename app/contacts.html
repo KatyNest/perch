@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  <title>Perch | Контакты</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__img" src="img/logo.svg" alt="" />
+          </a>
+        </div>
+        <nav class="header__nav mobile-menu">
+          <ul class="nav">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="menu.html">Меню</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="about.html">О нас</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Франшиза</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="blog.html">Блог</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link active" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-btn">
+          <div class="menu-btn__inner">
+            <div class="menu-btn__line"></div>
+            <div class="menu-btn__line"></div>
+            <div class="menu-btn__line"></div>
+          </div>        
+        </div>
+      </div>
+    </div>
+  </header>
+ <section class="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <div class="contact__item">
+          <div class="title contact-title">
+            Есть вопросы? <br />
+            Отправьте нам сообщение
+          </div>
+          <div class="contact__text">Мы ответим в течение 24 часов</div>
+          <form class="contact-form" action="" method="post">
+            <div class="contact-form__items">
+              <div class="contact-form__item">
+                <input type="text" name="name" placeholder="Имя" />
+              </div>
+              <div class="contact-form__item">
+                <input type="email" name=email" placeholder="Email" />
+              </div>
+            </div>
+              <div class="contact-form__item">
+                <textarea name="message" cols="30" rows="8" placeholder="Сообщение"></textarea>
+              </div>
+              <button type="submit" class="contact-form__btn">Отправить</button>
+          </form>
+        </div>
+        <div class="contact__item">
+            <div class="contact__images">
+              <img class="contact__img" src="img/contact1.png" alt="" />
+              <img class="contact__img" src="img/contact2.png" alt="" />
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contacts">
+    <div class="container">
+      <div class="contacts__inner">
+        <div class="contacts__content">
+          <div class="hours">
+            <div class="hours__title">Часы работы</div>
+            <div class="hours__text">Ежедневно С 08:00 до 24:00</div>
+          </div>
+          <div class="address">
+            <div class="address__title">Адрес</div>
+            <div class="address__text">Новосибирск, Морской проспект, 10</div>
+          </div>
+          <div class="contacts">
+            <div class="contacts__title">Наши контакты</div>
+            <div class="contacts__text">
+              +7-903-222-5588
+              mail@perch.com
+            </div>
+          </div>
+        </div>
+        <div id="map"></div>
+      </div>
+    </div>
+  </section>
+ <footer class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="logo footer-logo">
+            <a class="logo__link" href="index.html">
+              <img class="logo__img" src="img/logo.svg" alt="" />
+            </a>
+          </div>
+          <nav class="footer__nav">
+            <ul class="nav">
+              <li class="nav__item">
+                <a class="nav__link active" href="index.html">Главная</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="menu.html">Меню</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="about.html">О нас</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Франшиза</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="blog.html">Блог</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link active" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-inner">
+            <div class="footer__copy">&copy; 2022 Все права защищены</div>
+            <!-- <div class="footer__social-media">
+              <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+            </div> -->
+            <div class="footer__contact">
+              <a class="footer__contact-link" href="contacts.html">Свзязаться с нами</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZUULO8ujT3g20o_Obqh4jWGMxSTjM6FE"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
